@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Websocket</title>
+</head>
+<body class="container px-10">
+<div class="">
+    <h1 class="font-bold my-5">Chat App</h1>
+    <label for="chatmessages">All Messages</label>
+    <textarea
+        id="chatmessages"
+        class="messagearea rounded ring p-2 mb-5 mt-3 w-full focus:outline-none"
+        name="chats"
+        rows="10"
+        placeholder="Welcome to chatroom"
+        readonly
+    ></textarea>
+
+    <form id="chatroom-message" class="flex flex-col">
+        <label for="message" class="mb-3">Message:</label>
+        <input type="text" name="message" id="message" class="py-1 ring rounded focus:outline-none"/>
+        <input type="submit" value="Send Message" class="mt-5 py-2 block font-medium
+               text-center text-white bg-gray-900 rounded focus:outline-none"/>
+    </form>
+</div>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="./index.js"></script>
+</body>
+</html>
